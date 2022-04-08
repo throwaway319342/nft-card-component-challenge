@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png"  sizes="32x32" href="./images/image-avatar.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/image-equilibrium.jpg">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    body {
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .content {
+      height: 610px;
+      width: 300px;
+      background-color: hsl(216, 50%, 16%);
+      padding-left: 20px;
+      padding-right: 20px;
+      border-radius: 25px;
+      /* padding-bottom: 10px; */
+    }
+
+    .space-between {
+      display: flex;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      justify-content: space-between;
+    }
+
+    .content > div {
+      color: white;
+    }
+
+    .center-vertically {
+      display: flex;
+      border-top: 1px solid hsl(215, 32%, 27%);
+      padding-top: 15px;
+      align-items: center;
+    }
+
+    .div1 {
+      padding-top: 20px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="content">
+      <div class="div1">
+        <img src="images/image-equilibrium.jpg" width="300" height="300" style="border-radius: 10px;">
+      </div>
+      <div class="div1" style="color: white; font-weight: 600;">
+        Equilibrium #3429
+      </div>
+      <div class="div1" style="color: hsl(215, 51%, 70%); font-weight: 400;">
+        Our Equilibrium collection promotes balance and calm.
+      </div>
+      <div class="space-between">
+        <div style="color: hsl(178, 100%, 50%);">
+          <img src="images/icon-ethereum.svg"><p style="display:inline">0.041 ETH</p>
+        </div>  
+        <div style="color: hsl(215, 51%, 70%);">
+          <img src="images/icon-clock.svg"><p style="display:inline;">3 days left</p>
+        </div>
+      </div>
+      <div class="center-vertically">
+        <div style="padding-right: 20px;">
+          <img src="images/image-avatar.png" width="32" height="32" style="border: 1px solid white; border-radius: 50%;">
+        </div>
+        <div>
+          <p style="color: hsl(215, 51%, 70%)">Creation of <span style="color: white">Jules Wyvern</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
